@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kentico.Xperience.MiniProfiler", "src\Kentico.Xperience.MiniProfiler\Kentico.Xperience.MiniProfiler.csproj", "{4E9C2A28-CE54-4D5E-87DA-A07D327605FD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{82300004-6E77-40B9-85D5-08738F681B2B}"
-	ProjectSection(SolutionItems) = preProject
-		Directory.Build.props = Directory.Build.props
-		Directory.build.targets = Directory.build.targets
-		Directory.Packages.props = Directory.Packages.props
-		global.json = global.json
-		nuget.config = nuget.config
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F32F06EB-D58A-4628-89F7-1A1ADA51499F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62FB51AB-8975-425D-A60E-C700758CA9D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kentico.Xperience.MiniProfiler.Tests", "tests\Kentico.Xperience.MiniProfiler.Tests\Kentico.Xperience.MiniProfiler.Tests.csproj", "{71B12E9D-FD4E-448F-ABB2-9A9D0658D14D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{FC37096B-F56A-4E83-8821-7AC35D6833F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DancingGoat", "examples\DancingGoat\DancingGoat.csproj", "{C5F8676E-3AA4-487B-8057-7AAA4CDA11FC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3468365-1B33-4955-AF03-813CFBFE145A}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,14 +23,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE.md = LICENSE.md
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62FB51AB-8975-425D-A60E-C700758CA9D4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F32F06EB-D58A-4628-89F7-1A1ADA51499F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DancingGoat", "examples\DancingGoat\DancingGoat.csproj", "{C5F8676E-3AA4-487B-8057-7AAA4CDA11FC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kentico.Xperience.MiniProfiler.Tests", "tests\Kentico.Xperience.MiniProfiler.Tests\Kentico.Xperience.MiniProfiler.Tests.csproj", "{77C1C1CA-13B9-47FD-AC14-24165253DECC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{82300004-6E77-40B9-85D5-08738F681B2B}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.build.targets = Directory.build.targets
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		nuget.config = nuget.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +46,10 @@ Global
 		{C5F8676E-3AA4-487B-8057-7AAA4CDA11FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5F8676E-3AA4-487B-8057-7AAA4CDA11FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5F8676E-3AA4-487B-8057-7AAA4CDA11FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77C1C1CA-13B9-47FD-AC14-24165253DECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77C1C1CA-13B9-47FD-AC14-24165253DECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77C1C1CA-13B9-47FD-AC14-24165253DECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77C1C1CA-13B9-47FD-AC14-24165253DECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B12E9D-FD4E-448F-ABB2-9A9D0658D14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B12E9D-FD4E-448F-ABB2-9A9D0658D14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B12E9D-FD4E-448F-ABB2-9A9D0658D14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B12E9D-FD4E-448F-ABB2-9A9D0658D14D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,7 +57,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4E9C2A28-CE54-4D5E-87DA-A07D327605FD} = {F32F06EB-D58A-4628-89F7-1A1ADA51499F}
 		{C5F8676E-3AA4-487B-8057-7AAA4CDA11FC} = {FC37096B-F56A-4E83-8821-7AC35D6833F5}
-		{77C1C1CA-13B9-47FD-AC14-24165253DECC} = {62FB51AB-8975-425D-A60E-C700758CA9D4}
+		{71B12E9D-FD4E-448F-ABB2-9A9D0658D14D} = {62FB51AB-8975-425D-A60E-C700758CA9D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B2A20BC-F57B-4AAE-B1C2-E4DC52EFCAC5}
