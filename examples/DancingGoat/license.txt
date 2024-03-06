@@ -1,0 +1,7 @@
+
+    Directory: C:\Users\asus\Desktop\Work\xperience-by-kentico-miniprofiler\examples\DancingGoat
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          06/03/2024    15:08              0 license.txt
+
