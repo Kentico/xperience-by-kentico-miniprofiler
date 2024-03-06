@@ -4,12 +4,14 @@
     <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+	<CentralPackageFloatingVersionsEnabled Condition="'$(LOCAL_NUGET)' == 'true'">true</CentralPackageFloatingVersionsEnabled>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Kentico.Xperience.Admin" Version="28.3.1" />
     <PackageVersion Include="Kentico.Xperience.WebApp" Version="28.3.1" />
     <PackageVersion Include="kentico.xperience.azurestorage" Version="28.3.1" />
     <PackageVersion Include="kentico.xperience.imageprocessing" Version="28.3.1" />
+	<PackageVersion Include="Kentico.Xperience.MiniProfiler" Version="" Condition="'$(LOCAL_NUGET)' == 'true'" />
     <PackageVersion Include="MiniProfiler.AspNetCore.Mvc" Version="4.3.8" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.6.0.74858" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />

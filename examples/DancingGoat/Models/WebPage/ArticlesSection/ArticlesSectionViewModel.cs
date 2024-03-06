@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-
+﻿
 using CMS.Websites;
 
 namespace DancingGoat.Models
@@ -12,14 +11,12 @@ namespace DancingGoat.Models
 
 
         /// <summary>
-        /// Maps <see cref=ArticlesSection"/> to a <see cref="ArticlesSectionViewModel"/>.
+        /// Maps <see cref="ArticlesSection"/> to a <see cref="ArticlesSectionViewModel"/>.
         /// </summary>
-        public static ArticlesSectionViewModel GetViewModel(ArticlesSection articlesSection, IEnumerable<ArticleViewModel> Articles, string ArticlesPath)
-        {
-            return new ArticlesSectionViewModel(Articles, ArticlesPath)
+        public static ArticlesSectionViewModel GetViewModel(ArticlesSection articlesSection, IEnumerable<ArticleViewModel> articles, string articlesPath) =>
+            new(articles, articlesPath)
             {
                 WebPage = articlesSection
             };
-        }
     }
 }

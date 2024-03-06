@@ -1,13 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
-
-	<ItemGroup>
-		<Using Include="NUnit" />
-		<Using Include="NUnit.Framework" />
-	</ItemGroup>
-
+  <ItemGroup>
+    <None Remove="C:\Users\asus\Desktop\Work\xperience-by-kentico-miniprofiler\\README.md" />
+  </ItemGroup>
 </Project>
