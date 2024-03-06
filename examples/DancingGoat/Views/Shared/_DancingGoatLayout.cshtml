@@ -55,7 +55,6 @@
     <link href="~/Content/Styles/Site.css" rel="stylesheet" type="text/css" />
     <title>@title</title>
     @RenderSection("styles", required: false)
-    @Html.Raw(ApplicationInsightsSnippet.FullScript)
     @Html.Kentico().ActivityLoggingScriptV2()
     <page-builder-styles />
 </head>

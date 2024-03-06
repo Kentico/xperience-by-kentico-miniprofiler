@@ -6,10 +6,6 @@ using CMS.IO;
 using DancingGoat;
 
 using Kentico.Xperience.AzureStorage;
-using Kentico.Xperience.Cloud;
-
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 
 // Registers the storage module into the system
 [assembly: RegisterModule(typeof(StorageInitializationModule))]
@@ -57,7 +53,7 @@ namespace DancingGoat
         {
             base.OnInit();
 
-            if (Environment.IsQa() || Environment.IsUat() || Environment.IsProduction())
+            if (Environment.IsProduction())
             {
                 // Maps the assets directory (e.g. media files) to the Azure storage provider
                 MapAzureStoragePath($"~/assets/");

@@ -1,39 +1,20 @@
-﻿using System;
-using System.Threading.Tasks;
-
-using DancingGoat;
+﻿using DancingGoat;
 using DancingGoat.Models;
 
-using Kentico.Activities.Web.Mvc;
-using Kentico.Content.Web.Mvc.Routing;
-using Kentico.Membership;
-using Kentico.OnlineMarketing.Web.Mvc;
-using Kentico.PageBuilder.Web.Mvc;
-using Kentico.Web.Mvc;
-
-using Kentico.Xperience.Cloud;
-
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
 
-using Microsoft.Extensions.Hosting;
-
+using Kentico.Web.Mvc;
+using Kentico.Content.Web.Mvc.Routing;
+using Kentico.Membership;
+using Kentico.PageBuilder.Web.Mvc;
+using Kentico.OnlineMarketing.Web.Mvc;
+using Kentico.Activities.Web.Mvc;
+using Kentico.Xperience.MiniProfiler;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddXperienceCloudApplicationInsights(builder.Configuration);
-
-if (builder.Environment.IsQa() || builder.Environment.IsUat() || builder.Environment.IsProduction())
-{
-    builder.Services.AddKenticoCloud(builder.Configuration);
-    builder.Services.AddXperienceCloudSendGrid(builder.Configuration);
-}
 
 builder.Services.AddKentico(features =>
 {
@@ -67,6 +48,13 @@ builder.Services.AddLocalization()
 
 builder.Services.AddDancingGoatServices();
 
+var env = builder.Environment;
+
+if (env.IsDevelopment())
+{
+    builder.Services.AddKenticoMiniProfiler();
+}
+
 ConfigureMembershipServices(builder.Services);
 
 var app = builder.Build();
@@ -79,12 +67,12 @@ app.UseCookiePolicy();
 
 app.UseAuthentication();
 
-if (builder.Environment.IsQa() || builder.Environment.IsUat() || builder.Environment.IsProduction())
-{
-    app.UseKenticoCloud();
-}
-
 app.UseKentico();
+
+if (env.IsDevelopment())
+{
+    app.UseMiniProfiler();
+}
 
 app.UseAuthorization();
 
