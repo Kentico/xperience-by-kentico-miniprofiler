@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\asus\Desktop\Work\xperience-by-kentico-miniprofiler\\README.md" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="kentico.xperience.admin" Condition="'$(SeparatedAdmin)' == 'false'" />
+		<PackageReference Include="kentico.xperience.azurestorage" />
+		<PackageReference Include="kentico.xperience.imageprocessing" />
+		<PackageReference Include="kentico.xperience.webapp" />
+		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" />
+	</ItemGroup>
+	
+</Project>
