@@ -58,8 +58,6 @@ if (env.IsDevelopment())
 
 This adds the profiler into your application if the current enviroment is `Development`
 
-View the [Usage Guide](./docs/Usage-Guide.md) for more detailed instructions.
-
 ## Contributing
 
 To see the guidelines for Contributing to Kentico open source software, please see [Kentico's `CONTRIBUTING.md`](https://github.com/Kentico/.github/blob/main/CONTRIBUTING.md) for more information and follow the [Kentico's `CODE_OF_CONDUCT`](https://github.com/Kentico/.github/blob/main/CODE_OF_CONDUCT.md).
