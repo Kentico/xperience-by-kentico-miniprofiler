@@ -31,14 +31,15 @@
     <CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-	<TimestampServerUrl>http://timestamp.digicert.com</TimestampServerUrl>
   </PropertyGroup>
 
-	<PropertyGroup Condition=" $(Configuration) == 'Release' ">
-		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-		<IncludeSymbols>true</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-	</PropertyGroup>
+  <PropertyGroup Condition=" $(Configuration) == 'Release' ">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
 
   <ItemGroup Label="StaticCodeAnalysis">
     <PackageReference Include="SonarAnalyzer.CSharp">
