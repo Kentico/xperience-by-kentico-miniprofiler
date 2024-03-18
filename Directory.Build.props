@@ -9,8 +9,8 @@
     <VersionSuffix>prerelease-1</VersionSuffix>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
-    <PackageProjectUrl>https://github.com/Kentico/REPOSITORY_NAME</PackageProjectUrl>
-    <PackageReleaseNotes>https://github.com/Kentico/REPOSITORY_NAME/releases</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/Kentico/xperience-by-kentico-miniprofiler</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/Kentico/xperience-by-kentico-miniprofiler/releases</PackageReleaseNotes>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>xperience;kentico;aspnetcore</PackageTags>
@@ -31,7 +31,6 @@
     <CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <TimestampServerUrl>http://timestamp.digicert.com</TimestampServerUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition=" $(Configuration) == 'Release' ">
