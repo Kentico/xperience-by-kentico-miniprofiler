@@ -3,8 +3,8 @@
     <RootNamespace>DancingGoat</RootNamespace>
     <UserSecretsId>79c858af-5444-4954-8d08-6592a961e82a</UserSecretsId>
     <SeparatedAdmin Condition="'$(SeparatedAdmin)' == ''">false</SeparatedAdmin>
-	<Nullable>annotations</Nullable>
-	<RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <Nullable>annotations</Nullable>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="App_Data\CMSModules\WebFarm\webfarm.sync" />
@@ -20,10 +20,10 @@
     <DefineConstants>$(DefineConstants);SEPARATED_ADMIN</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-	  <PackageReference Include="kentico.xperience.admin" Condition="'$(SeparatedAdmin)' == 'false'" />
-	  <PackageReference Include="kentico.xperience.azurestorage" />
-	  <PackageReference Include="kentico.xperience.imageprocessing" />
-	  <PackageReference Include="kentico.xperience.webapp" />
+    <PackageReference Include="kentico.xperience.admin" Condition="'$(SeparatedAdmin)' == 'false'" />
+    <PackageReference Include="kentico.xperience.azurestorage" />
+    <PackageReference Include="kentico.xperience.imageprocessing" />
+    <PackageReference Include="kentico.xperience.webapp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Kentico.Xperience.MiniProfiler\Kentico.Xperience.MiniProfiler.csproj" />
