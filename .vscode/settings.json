@@ -30,11 +30,8 @@
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
 
-  "dotnet.defaultSolution": "Kentico.Xperience.RepoTemplate.sln",
+  "dotnet.defaultSolution": "Kentico.Xperience.MiniProfiler.sln",
 
-  "eslint.workingDirectories": [
-    "./src/Kentico.Xperience.RepoTemplate/Admin/Client"
-  ],
   "[aspnetcorerazor]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
