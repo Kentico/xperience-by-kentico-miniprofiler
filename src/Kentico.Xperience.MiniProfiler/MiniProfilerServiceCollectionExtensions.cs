@@ -1,8 +1,7 @@
 ﻿using CMS.DataEngine;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace Kentico.Xperience.MiniProfiler;
+namespace Microsoft.Extensions.DependencyInjection;
 
 public static class MiniProfilerServiceCollectionExtensions
 {
