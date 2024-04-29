@@ -12,7 +12,6 @@ using Kentico.Membership;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.Activities.Web.Mvc;
-using Kentico.Xperience.MiniProfiler;
 
 var builder = WebApplication.CreateBuilder(args);
 
