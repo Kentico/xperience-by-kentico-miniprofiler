@@ -44,7 +44,7 @@ stages:
         variables:
           - group: Code Sign KV Auth
 
-           - name: ProjectFolder
+          - name: ProjectFolder
             value: src/Kentico.Xperience.MiniProfiler
 
           - name: ProjectFilePath
