@@ -37,10 +37,19 @@ dotnet add package Kentico.Xperience.MiniProfiler
 1. Simply add this library to your to the application services in your `Program.cs`.
 
 ```csharp
+
+builder.Services.AddKentico(features =>
+{
+    // Kentico builder services configuration ...
+});
+
+// Other builder services configuration ...
+
 var env = builder.Environment;
 
 if (env.IsDevelopment())
 {
+    // After the call to builder.Services.AddKentico( ... );
     builder.Services.AddKenticoMiniProfiler();
 }
 
