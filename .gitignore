@@ -137,3 +137,5 @@ segments_2i
 **/Client/dist/*
 
 **/CMSModules/WebFarm/*
+
+**/license.txt
