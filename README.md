@@ -69,6 +69,8 @@ if (env.IsDevelopment())
 
 This adds the profiler into your application if the current enviroment is `Development`
 
+> For more details about this integration, check out [Get to know Xperience by Kentico: Unlocking performance insights with MiniProfiler](https://dev.to/michael419/get-to-know-xperience-by-kentico-unlocking-performance-insights-with-miniprofiler-2b2c) by [Michael Eustace](https://community.kentico.com/member/85)
+
 ## Contributing
 
 To see the guidelines for Contributing to Kentico open source software, please see [Kentico's `CONTRIBUTING.md`](https://github.com/Kentico/.github/blob/main/CONTRIBUTING.md) for more information and follow the [Kentico's `CODE_OF_CONDUCT`](https://github.com/Kentico/.github/blob/main/CODE_OF_CONDUCT.md).
