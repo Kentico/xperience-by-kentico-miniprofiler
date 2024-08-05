@@ -1482,7 +1482,6 @@
         "dependencies": {
           "MiniProfiler.AspNetCore.Mvc": "[4.3.8, )",
           "kentico.xperience.azurestorage": "[28.3.1, )",
-          "kentico.xperience.imageprocessing": "[28.3.1, )",
           "kentico.xperience.webapp": "[28.3.1, )"
         }
       },
