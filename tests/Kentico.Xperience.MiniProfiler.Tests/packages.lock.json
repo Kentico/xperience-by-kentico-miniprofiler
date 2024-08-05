@@ -778,33 +778,6 @@
         "resolved": "6.5.0",
         "contentHash": "QWINE2x3MbTODsWT1Gh71GaGb5icBz4chS8VYvTgsBnsi8esgN6wtHhydd7fvToWECYGq7T4cgBBDiKD/363fg=="
       },
-      "SkiaSharp": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "LJHAMrbWO00J7jXWLWehyjqFo29T4VzABimfJb4nICqpEe3c/KvQGWL4ItON8ymzhxYOeFgyxeRzuNzO4GHSug==",
-        "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
-        }
-      },
-      "SkiaSharp.NativeAssets.Linux.NoDependencies": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "KkMftfAz1lGPnuhyecuLJzeyvMjXtHp9cYVQc/oeLhF8KYrxtUxRy5LOX5oROhyLHy/CyqEl9MoAhqmSH7cV7g==",
-        "dependencies": {
-          "SkiaSharp": "2.88.7"
-        }
-      },
-      "SkiaSharp.NativeAssets.macOS": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "3jNzco4VjcYPFNxR9aNWcgweFXbTSdM1VpNRzCS4X0i1A1OuNqcaulrAvmntNpujeWxHo9e6WGh6FN8Jf5+XhA=="
-      },
-      "SkiaSharp.NativeAssets.Win32": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "BCXmWdQ0oVck9vRwC8U3ocSaTHEx28VB+6qw9OxGIMQ86iO5bp4Flqk3IXH0l9Pbr7vWAUOpI212iaL9mTaUZQ=="
-      },
       "System.Buffers": {
         "type": "Transitive",
         "resolved": "4.5.1",
@@ -1372,7 +1345,6 @@
         "dependencies": {
           "MiniProfiler.AspNetCore.Mvc": "[4.3.8, )",
           "kentico.xperience.azurestorage": "[28.3.1, )",
-          "kentico.xperience.imageprocessing": "[28.3.1, )",
           "kentico.xperience.webapp": "[28.3.1, )"
         }
       },
@@ -1386,17 +1358,6 @@
           "Azure.Storage.Queues": "12.17.1",
           "Kentico.Xperience.Core": "28.3.1",
           "Newtonsoft.Json": "13.0.3"
-        }
-      },
-      "Kentico.Xperience.ImageProcessing": {
-        "type": "CentralTransitive",
-        "requested": "[28.3.1, )",
-        "resolved": "28.3.1",
-        "contentHash": "p2q/NR6UHFuiMyTjAykqYe/NBcVag5VJbkjgYte1Enib+QiysPlfoHOesFNqWbK8AAoJfCAYwQ8NRQwWOOedGA==",
-        "dependencies": {
-          "Kentico.Xperience.Core": "28.3.1",
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.NativeAssets.Linux.NoDependencies": "2.88.7"
         }
       },
       "Kentico.Xperience.WebApp": {
