@@ -14,17 +14,6 @@
           "Newtonsoft.Json": "13.0.3"
         }
       },
-      "Kentico.Xperience.ImageProcessing": {
-        "type": "Direct",
-        "requested": "[28.3.1, )",
-        "resolved": "28.3.1",
-        "contentHash": "p2q/NR6UHFuiMyTjAykqYe/NBcVag5VJbkjgYte1Enib+QiysPlfoHOesFNqWbK8AAoJfCAYwQ8NRQwWOOedGA==",
-        "dependencies": {
-          "Kentico.Xperience.Core": "28.3.1",
-          "SkiaSharp": "2.88.7",
-          "SkiaSharp.NativeAssets.Linux.NoDependencies": "2.88.7"
-        }
-      },
       "Kentico.Xperience.WebApp": {
         "type": "Direct",
         "requested": "[28.3.1, )",
@@ -787,33 +776,6 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
         }
-      },
-      "SkiaSharp": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "LJHAMrbWO00J7jXWLWehyjqFo29T4VzABimfJb4nICqpEe3c/KvQGWL4ItON8ymzhxYOeFgyxeRzuNzO4GHSug==",
-        "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.7",
-          "SkiaSharp.NativeAssets.macOS": "2.88.7"
-        }
-      },
-      "SkiaSharp.NativeAssets.Linux.NoDependencies": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "KkMftfAz1lGPnuhyecuLJzeyvMjXtHp9cYVQc/oeLhF8KYrxtUxRy5LOX5oROhyLHy/CyqEl9MoAhqmSH7cV7g==",
-        "dependencies": {
-          "SkiaSharp": "2.88.7"
-        }
-      },
-      "SkiaSharp.NativeAssets.macOS": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "3jNzco4VjcYPFNxR9aNWcgweFXbTSdM1VpNRzCS4X0i1A1OuNqcaulrAvmntNpujeWxHo9e6WGh6FN8Jf5+XhA=="
-      },
-      "SkiaSharp.NativeAssets.Win32": {
-        "type": "Transitive",
-        "resolved": "2.88.7",
-        "contentHash": "BCXmWdQ0oVck9vRwC8U3ocSaTHEx28VB+6qw9OxGIMQ86iO5bp4Flqk3IXH0l9Pbr7vWAUOpI212iaL9mTaUZQ=="
       },
       "System.Buffers": {
         "type": "Transitive",
