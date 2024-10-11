@@ -26,7 +26,7 @@ namespace DancingGoat.Models
                 eventContentItem.EventPromoText,
                 eventContentItem.EventDate,
                 cafe?.CafeName,
-                cafe?.CafeCuppingOffer.Select(coffee => coffee.CoffeeName)
+                cafe?.CafeCuppingOffer.Select(coffee => coffee.ProductFieldsName)
             );
         }
     }
