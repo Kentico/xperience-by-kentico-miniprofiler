@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-using DancingGoat;
+﻿using DancingGoat;
 using DancingGoat.Models;
 
 using Kentico.Activities.Web.Mvc;
@@ -11,25 +8,12 @@ using Kentico.OnlineMarketing.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
 using Kentico.Web.Mvc;
 
-
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
-
-using Kentico.Web.Mvc;
-using Kentico.Content.Web.Mvc.Routing;
-using Kentico.Membership;
-using Kentico.PageBuilder.Web.Mvc;
-using Kentico.OnlineMarketing.Web.Mvc;
-using Kentico.Activities.Web.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddKentico(features =>
 {
