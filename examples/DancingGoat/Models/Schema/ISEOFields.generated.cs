@@ -20,6 +20,12 @@ namespace DancingGoat.Models
 	public interface ISEOFields
 	{
 		/// <summary>
+		/// Code name of the reusable field schema.
+		/// </summary>
+		public const string REUSABLE_FIELD_SCHEMA_NAME = "SEOFields";
+
+
+		/// <summary>
 		/// SEOFieldsTitle.
 		/// </summary>
 		public string SEOFieldsTitle { get; set; }
@@ -29,5 +35,11 @@ namespace DancingGoat.Models
 		/// SEOFieldsDescription.
 		/// </summary>
 		public string SEOFieldsDescription { get; set; }
+
+
+		/// <summary>
+		/// SEOFieldsAllowSearchIndexing.
+		/// </summary>
+		public bool SEOFieldsAllowSearchIndexing { get; set; }
 	}
 }

@@ -79,5 +79,42 @@ namespace DancingGoat.Models
 
             return description;
         }
+
+
+        /// <summary>
+        /// Returns value of <see cref="ISEOFields.SEOFieldsAllowSearchIndexing"/> field from the given model."/>
+        /// </summary>
+        /// <remarks>
+        /// View model must satisfy following requirements:<br/>
+        /// - is a page builder page based on <see cref="TemplateViewModel"/> class<br/>
+        /// - implements <see cref="ISEOFields"/><br/>
+        /// - implements <see cref="IWebPageBasedViewModel"/> and its base page <see cref="IWebPageBasedViewModel.WebPage"/> implements <see cref="ISEOFields"/><br/>
+        /// <para>In other cases the method returns false.</para>
+        /// </remarks>
+        /// <param name="model">Model</param>
+        public static bool GetSearchIndexing(object model)
+        {
+            bool allowSearchIndexing = false;
+
+            var viewModel = model;
+            if (viewModel is TemplateViewModel templateViewModel)
+            {
+                viewModel = templateViewModel.GetTemplateModel<object>();
+            }
+
+            if (viewModel is ISEOFields webPageWithSEO)
+            {
+                allowSearchIndexing = webPageWithSEO.SEOFieldsAllowSearchIndexing;
+            }
+            else if (viewModel is IWebPageBasedViewModel webPageBasedViewModel)
+            {
+                if (webPageBasedViewModel.WebPage is ISEOFields basePageWithSEO)
+                {
+                    allowSearchIndexing = basePageWithSEO.SEOFieldsAllowSearchIndexing;
+                }
+            }
+
+            return allowSearchIndexing;
+        }
     }
 }
