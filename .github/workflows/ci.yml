@@ -1,9 +1,21 @@
 name: "CI: Build and Test"
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "**.cs"
+      - "**.tsx"
+      - "**.js"
+      - "**.csproj"
+      - "**.props"
+      - "**.targets"
+      - "**.sln"
+      - "**/Client/**/*.json"
   pull_request:
     branches: [main]
     paths:
+      - ".github/workflows/ci.yml"
       - "**.cs"
       - "**.cshtml"
       - "**.tsx"
@@ -29,10 +41,10 @@ jobs:
       DOTNET_NOLOGO: 1
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
 
