@@ -3,7 +3,12 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+
+    <Product>Xperience by Kentico Mini Profiler</Product>
+    <Title>$(Product)</Title>
+    <PackageId>Kentico.Xperience.MiniProfiler</PackageId>
+    <Description>Enables the use of Mini Profiler in Xperience by Kentico projects.</Description>
+    <RepositoryUrl>https://github.com/Kentico/xperience-by-kentico-miniprofiler</RepositoryUrl>
   </PropertyGroup>
 	
 	<ItemGroup>
