@@ -14,8 +14,7 @@ public static class MiniProfilerServiceCollectionExtensions
     /// <returns></returns>
     public static IServiceCollection AddKenticoMiniProfiler(this IServiceCollection services)
     {
-        services.AddMiniProfiler(options =>
-            options.TrackConnectionOpenClose = true);
+        services.AddMiniProfiler();
         services.AddTransient<ITagHelperComponent, ScriptTagComponent>();
         services.AddTransient<IDataProvider, MiniprofilerDataProvider>();
 
@@ -30,11 +29,7 @@ public static class MiniProfilerServiceCollectionExtensions
     /// <returns></returns>
     public static IServiceCollection AddKenticoMiniProfiler(this IServiceCollection services, Action<MiniProfilerOptions> configureOptions)
     {
-        services.AddMiniProfiler(options =>
-        {
-            configureOptions(options);
-            options.TrackConnectionOpenClose = true;
-        });
+        services.AddMiniProfiler(options => configureOptions(options));
         services.AddTransient<ITagHelperComponent, ScriptTagComponent>();
         services.AddTransient<IDataProvider, MiniprofilerDataProvider>();
 
