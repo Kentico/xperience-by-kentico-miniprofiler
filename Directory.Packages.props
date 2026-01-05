@@ -7,10 +7,11 @@
     <CentralPackageFloatingVersionsEnabled Condition="'$(LOCAL_NUGET)' == 'true'">true</CentralPackageFloatingVersionsEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Kentico.Xperience.Admin" Version="30.5.1" />
-    <PackageVersion Include="Kentico.Xperience.WebApp" Version="30.5.1" />
-    <PackageVersion Include="kentico.xperience.azurestorage" Version="30.5.1" />
-    <PackageVersion Include="kentico.xperience.imageprocessing" Version="30.5.1" />
+    <PackageVersion Include="Kentico.Xperience.Admin" Version="31.0.0" />
+    <PackageVersion Include="Kentico.Xperience.WebApp" Version="31.0.0" />
+    <PackageVersion Include="kentico.xperience.azurestorage" Version="31.0.0" />
+    <PackageVersion Include="kentico.xperience.imageprocessing" Version="31.0.0" />
+    <PackageVersion Include="kentico.xperience.mjml" Version="31.0.0" />
     <PackageVersion Include="Kentico.Xperience.MiniProfiler" Version="" Condition="'$(LOCAL_NUGET)' == 'true'" />
     <PackageVersion Include="MiniProfiler.AspNetCore.Mvc" Version="4.5.4" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.6.0.74858" />
