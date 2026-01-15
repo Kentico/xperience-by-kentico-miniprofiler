@@ -14,12 +14,13 @@ This integration enables you to use [MiniProfiler](https://miniprofiler.com/) wh
 
 ## Library Version Matrix
 
-| Xperience Version | Library Version |
-| ----------------- | --------------- |
-| >= 30.5.1         | 2.1.0           |
-| >= 29.5.3         | 2.0.1           |
-| >= 29.5.3         | 2.0.0           |
-| >= 28.3.1         | 1.0.0           |
+| Xperience Version | Library Version      |
+| ----------------- | -------------------- |
+| >= 31.0.0         | 3.0.0-prerelease-2   |
+| >= 30.5.1         | 2.1.0                |
+| >= 29.5.3         | 2.0.1                |
+| >= 29.5.3         | 2.0.0                |
+| >= 28.3.1         | 1.0.0                |
 
 ### Dependencies
 
