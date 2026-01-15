@@ -16,6 +16,7 @@ This integration enables you to use [MiniProfiler](https://miniprofiler.com/) wh
 
 | Xperience Version | Library Version |
 | ----------------- | --------------- |
+| >= 31.0.0         | 3.0.0           |
 | >= 30.5.1         | 2.1.0           |
 | >= 29.5.3         | 2.0.1           |
 | >= 29.5.3         | 2.0.0           |
