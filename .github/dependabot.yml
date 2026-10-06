@@ -1,7 +1,6 @@
-# Dependabot alerts and security updates are enabled for every repository by the organization's
-# security configuration. This file adds weekly version updates. For NuGet and npm, security updates
-# and version updates each come as one pull request for major updates and one for minor and patch
-# updates. GitHub Actions updates come as a single pull request.
+# Dependabot alerts and security updates are switched on in the repository settings.
+# Version updates are off (open-pull-requests-limit: 0), so Dependabot opens pull requests only for
+# security updates, one pull request per vulnerable package.
 # Options: https://docs.github.com/code-security/reference/supply-chain-security/dependabot-options-reference
 version: 2
 
@@ -9,51 +8,17 @@ updates:
   - package-ecosystem: nuget
     directory: /
     schedule:
-      interval: weekly
-      day: monday
-    cooldown:
-      default-days: 7
-    ignore:
-      - dependency-name: "Kentico.Xperience.*"
-        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
-    groups:
-      nuget-security-major:
-        applies-to: security-updates
-        update-types: [major]
-      nuget-security-minor-patch:
-        applies-to: security-updates
-        update-types: [minor, patch]
-      nuget-major:
-        update-types: [major]
-      nuget-minor-patch:
-        update-types: [minor, patch]
+      interval: monthly
+    open-pull-requests-limit: 0
 
   - package-ecosystem: npm
     directory: /examples/DancingGoat
     schedule:
-      interval: weekly
-      day: monday
-    cooldown:
-      default-days: 7
-    groups:
-      npm-security-major:
-        applies-to: security-updates
-        update-types: [major]
-      npm-security-minor-patch:
-        applies-to: security-updates
-        update-types: [minor, patch]
-      npm-major:
-        update-types: [major]
-      npm-minor-patch:
-        update-types: [minor, patch]
+      interval: monthly
+    open-pull-requests-limit: 0
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: monday
-    cooldown:
-      default-days: 7
-    groups:
-      github-actions:
-        patterns: ["*"]
+      interval: monthly
+    open-pull-requests-limit: 0
