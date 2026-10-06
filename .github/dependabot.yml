@@ -1,0 +1,24 @@
+# Dependabot alerts and security updates are switched on in the repository settings.
+# Version updates are off (open-pull-requests-limit: 0), so Dependabot opens pull requests only for
+# security updates, one pull request per vulnerable package.
+# Options: https://docs.github.com/code-security/reference/supply-chain-security/dependabot-options-reference
+version: 2
+
+updates:
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: npm
+    directory: /examples/DancingGoat
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
