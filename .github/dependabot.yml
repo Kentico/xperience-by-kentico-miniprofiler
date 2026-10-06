@@ -1,6 +1,7 @@
 # Dependabot alerts and security updates are enabled for every repository by the organization's
-# security configuration. This file adds weekly version updates. Per ecosystem, security updates and
-# version updates each come as one pull request for major updates and one for minor and patch updates.
+# security configuration. This file adds weekly version updates. For NuGet and npm, security updates
+# and version updates each come as one pull request for major updates and one for minor and patch
+# updates. GitHub Actions updates come as a single pull request.
 # Options: https://docs.github.com/code-security/reference/supply-chain-security/dependabot-options-reference
 version: 2
 
