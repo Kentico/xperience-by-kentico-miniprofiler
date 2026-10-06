@@ -13,6 +13,7 @@
     <PackageVersion Include="kentico.xperience.imageprocessing" Version="31.0.0" />
     <PackageVersion Include="kentico.xperience.mjml" Version="31.0.0" />
     <PackageVersion Include="Kentico.Xperience.MiniProfiler" Version="" Condition="'$(LOCAL_NUGET)' == 'true'" />
+    <PackageVersion Include="Magick.NET-Q8-AnyCPU" Version="14.15.0" />
     <PackageVersion Include="MiniProfiler.AspNetCore.Mvc" Version="4.5.4" />
     <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.6.0.74858" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
