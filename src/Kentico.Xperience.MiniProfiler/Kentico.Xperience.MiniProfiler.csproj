@@ -15,6 +15,7 @@
 		<PackageReference Include="kentico.xperience.admin" Condition="'$(SeparatedAdmin)' == 'false'" />
 		<PackageReference Include="kentico.xperience.azurestorage" />
 		<PackageReference Include="kentico.xperience.webapp" />
+		<PackageReference Include="Magick.NET-Q8-AnyCPU" />
 		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" />
 	</ItemGroup>
 	
