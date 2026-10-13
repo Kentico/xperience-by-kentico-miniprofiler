@@ -1,0 +1,25 @@
+# Dependabot alerts and security updates are switched on in the repository settings.
+# Version updates are off (open-pull-requests-limit: 0), so Dependabot opens pull requests only for
+# security updates. The NuGet entry exists to apply the ignore rules below to them.
+# Options: https://docs.github.com/code-security/reference/supply-chain-security/dependabot-options-reference
+version: 2
+
+updates:
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 0
+    ignore:
+      # The integration targets the oldest supported Xperience by Kentico version on purpose.
+      - dependency-name: "Kentico.Xperience.*"
+      # Transitive dependencies of the Kentico.Xperience.* packages. The consuming application supplies the
+      # Xperience by Kentico version as a peer dependency, so these are fixed by upgrading Xperience by
+      # Kentico, not by pinning them here.
+      - dependency-name: "AngleSharp"
+      - dependency-name: "HotChocolate.Language"
+      - dependency-name: "HtmlSanitizer"
+      - dependency-name: "Magick.NET-Q8-AnyCPU"
+      - dependency-name: "MailKit"
+      - dependency-name: "MimeKit"
+      - dependency-name: "Microsoft.SemanticKernel.Core"
