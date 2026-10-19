@@ -14,6 +14,7 @@
 	<ItemGroup>
 		<PackageReference Include="kentico.xperience.webapp" />
 		<PackageReference Include="MiniProfiler.AspNetCore.Mvc" />
+		<PackageReference Include="System.Security.Cryptography.Pkcs" />
 	</ItemGroup>
 	
 </Project>

@@ -15,5 +15,6 @@
     <PackageVersion Include="NUnit" Version="4.1.0" />
     <PackageVersion Include="NUnit3TestAdapter" Version="4.5.0" />
     <PackageVersion Include="NUnit.Analyzers" Version="4.0.1" />
+    <PackageVersion Include="System.Security.Cryptography.Pkcs" Version="8.0.2" />
   </ItemGroup>
 </Project>
