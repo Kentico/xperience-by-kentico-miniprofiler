@@ -1,12 +1,17 @@
 # Dependabot alerts and security updates are switched on in the repository settings.
 # Version updates are off (open-pull-requests-limit: 0), so Dependabot opens pull requests only for
-# security updates. The NuGet entry exists to apply the ignore rules below to them.
+# security updates. The NuGet entry exists to apply the ignore rules below to them. A security update
+# runs in the directory of the vulnerable project and only uses an entry whose directories match it.
 # Options: https://docs.github.com/code-security/reference/supply-chain-security/dependabot-options-reference
 version: 2
 
 updates:
   - package-ecosystem: nuget
-    directory: /
+    directories:
+      - "/"
+      - "/src/*"
+      - "/examples/*"
+      - "/tests/*"
     schedule:
       interval: monthly
     open-pull-requests-limit: 0
